@@ -64,6 +64,7 @@
 .card__author {
 	@include mix.flexbox;
 	@include mix.align-items(center);
+	padding-right: func.em(45, var.$font-size-primary);
 }
 
 .card__author-img-box {
@@ -90,6 +91,8 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
 	width: 100%;
 }
 
