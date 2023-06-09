@@ -159,7 +159,6 @@
 
 @media (min-width: 60em) {
 	.card {
-		width: 100%;
 		max-width: func.em(720, var.$font-size-primary);
 		@include mix.flex-direction(row);
 	}
