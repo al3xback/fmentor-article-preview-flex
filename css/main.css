@@ -467,6 +467,7 @@ ol {
     flex-shrink: 0;
     -webkit-flex-basis: 21.5384615385em;
     flex-basis: 21.5384615385em;
+    max-width: 21.5384615385em;
   }
   .card__image-inner {
     -webkit-box-flex: auto;

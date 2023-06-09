@@ -166,6 +166,7 @@
 	.card__image {
 		@include mix.flex-shrink(0);
 		@include mix.flex-basis(func.em(280, var.$font-size-primary));
+		max-width: func.em(280, var.$font-size-primary);
 	}
 
 	.card__image-inner {
