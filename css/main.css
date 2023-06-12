@@ -464,7 +464,6 @@ ol {
 
 @media (min-width: 60em) {
   .card {
-    max-width: 55.3846153846em;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     -moz-box-direction: normal;
@@ -472,6 +471,7 @@ ol {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    max-width: 55.3846153846em;
   }
   .card__image {
     -webkit-flex-shrink: 0;

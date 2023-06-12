@@ -162,8 +162,8 @@
 
 @media (min-width: 60em) {
 	.card {
-		max-width: func.em(720, var.$font-size-primary);
 		@include mix.flex-direction(row);
+		max-width: func.em(720, var.$font-size-primary);
 	}
 
 	.card__image {
