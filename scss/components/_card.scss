@@ -1,9 +1,19 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
-.card {
+.card,
+.card__image,
+.card__image-inner,
+.card__content,
+.card__author-img-box,
+.card__author-info,
+.card__share,
+.card__share-box {
 	display: flex;
 	flex-direction: column;
+}
+
+.card {
 	width: 100%;
 	max-width: func.em(320, var.$font-size-primary);
 	background-color: var.$color-white;
@@ -11,12 +21,6 @@
 		func.em(60, var.$font-size-primary);
 	border-radius: 8px;
 	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
-}
-
-.card__image,
-.card__content {
-	display: flex;
-	flex-direction: column;
 }
 
 .card__image {
@@ -87,8 +91,6 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	display: flex;
-	flex-direction: column;
 	width: 100%;
 }
 
@@ -101,8 +103,7 @@
 
 .card__share-box {
 	position: relative;
-	display: flex;
-	justify-content: flex-end;
+	align-items: flex-end;
 	padding: func.em(24, var.$font-size-primary)
 		func.em(32, var.$font-size-primary);
 	background-color: transparent;
@@ -110,7 +111,8 @@
 }
 
 .card__share-action,
-.card__share-action-buttons {
+.card__share-action-buttons,
+.card__share-action-buttons li {
 	display: flex;
 	align-items: center;
 }
