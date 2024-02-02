@@ -8,9 +8,17 @@
 .card__author-img-box,
 .card__author-info,
 .card__share,
-.card__share-box {
+.card__share-box,
+.card__share-action-buttons li {
 	display: flex;
 	flex-direction: column;
+}
+
+.card__author,
+.card__share-action,
+.card__share-action-buttons {
+	display: flex;
+	align-items: center;
 }
 
 .card {
@@ -59,8 +67,6 @@
 }
 
 .card__author {
-	display: flex;
-	align-items: center;
 	gap: func.em(15, var.$font-size-primary);
 	padding-right: func.em(45, var.$font-size-primary);
 }
@@ -105,13 +111,6 @@
 		func.em(32, var.$font-size-primary);
 	background-color: transparent;
 	transition: all 0.24s;
-}
-
-.card__share-action,
-.card__share-action-buttons,
-.card__share-action-buttons li {
-	display: flex;
-	align-items: center;
 }
 
 .card__share-action {
