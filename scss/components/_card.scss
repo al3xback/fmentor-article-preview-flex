@@ -49,27 +49,24 @@
 
 .card__content {
 	position: relative;
+	gap: func.em(15, 16);
 	padding: func.em(32, var.$font-size-primary)
 		func.em(32, var.$font-size-primary) func.em(20, var.$font-size-primary);
 }
 
-.card__title {
-	margin-bottom: func.em(15, 16);
-}
-
 .card__desc {
-	margin-bottom: func.em(24, 13);
+	margin-bottom: func.em(10, 13);
 }
 
 .card__author {
 	display: flex;
 	align-items: center;
+	gap: func.em(15, var.$font-size-primary);
 	padding-right: func.em(45, var.$font-size-primary);
 }
 
 .card__author-img-box {
 	flex: none;
-	margin-right: func.em(15, var.$font-size-primary);
 }
 
 .card__author-img {
